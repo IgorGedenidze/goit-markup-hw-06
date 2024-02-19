@@ -96,42 +96,9 @@ img{
 }        
 
 .menu-list{
-    /*gap: 40px;
-     display: flex; */
     display: none;
 }
 
-
-.menu-list-item{}
-
-/* .menu-item-link {
-    padding-top: 24px;
-    padding-bottom: 24px;
-    color: #2E2F42;
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 1.5em;
-    letter-spacing: 0.02em;
-    padding: 24px 0;
-    display: block;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.current{
-    position: relative;
-    color: #404BBF;
-}
-
-.current::after{
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    background-color: #404BBF;
-    height: 4px;
-    border-radius: 2px;
-    width: 100%;
-} */
 
 .menu-item-link:hover,
 .menu-item-link:active,
@@ -149,21 +116,6 @@ img{
     display: none;
 }
 
-/* .address-list{
-    gap: 40px;
-    display: flex;
-} */
-
-/* .address-item-link{
-    color: #434455;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.address-item-link:hover,
-.address-item-link:active,
-.address-item-link:focus {
-    color: #404BBF;
-} */
 
 .open-menu-btn{
     padding: 0;
@@ -188,7 +140,7 @@ img{
     /* padding: 188px 0; */
     background-image: linear-gradient(rgba(46, 47, 66, 0.7),
     rgba(46, 47, 66, 0.7)),
-    url(../images/people-office.jpg);
+    url(../images/people-office-mob.jpg);
     margin-left: auto;
     margin-right: auto;
     background-position: center;
@@ -198,6 +150,16 @@ img{
     padding-bottom: 72px;
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dpx) {
+.hero-container {
+    background-image:
+    linear-gradient(rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)),
+    url(../images/people-office-mobx2.jpg);
+    }
+}
 
 .hero-title{
     color: #FFF;
@@ -999,8 +961,6 @@ background-color: #404BBF;
     color: #404BBF;
 }
 
-.current {}
-
 .address-list-mob {
     display: flex;
     flex-direction: column;
@@ -1102,10 +1062,11 @@ background-color: #404BBF;
         padding: 112px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)),
-        url(../images/people-office.jpg);
+        url(../images/people-office-tab.jpg);
         max-width: 768px;
         height: 436px;
         }
+
 
     .hero-title {
         color: #FFF;
@@ -1164,6 +1125,10 @@ background-color: #404BBF;
 
 .portfolio-list-item {
     width: calc((100% - 24px) /2);
+}
+
+.portfolio-img{
+    width: 356px;
 }
 
 /*=====Footer=====*/
@@ -1226,6 +1191,17 @@ background-color: #404BBF;
     width: 408px;
     min-height: 584px;
 }
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dpx) {
+    .hero-container {
+        background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)),
+        url(../images/people-office-tabx2.jpg);
+    }
 }
 
 /*=====Desktop=======*/
@@ -1451,9 +1427,18 @@ background-color: #404BBF;
     width: 408px;
     min-height: 584px;
 }
-
 }
 
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dpx) {
+    .hero-container {
+        background-image:
+        linear-gradient(rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)),
+        url(../images/people-officex2.jpg);
+    }
+}
 
 
 
